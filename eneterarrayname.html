@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Enter your name">
+    <button>Add to Array</button>
+    <button id="b">Print Name</button>
+    <script>
+        var m = []
+
+        document.querySelector("button").onclick = function () {
+            let b = document.querySelector("input").value;
+            m.push(b)
+            console.log(m)
+
+
+        }
+
+        // document.querySelector("#b").onclick = function () {
+        //     document.write(m)
+        // }
+
+        document.querySelector("#b").onclick = function () {
+
+
+            let p = document.createElement("p")
+            p.innerHTML = m
+            document.body.appendChild(p)
+        }
+    </script>
+</body>
+
+</html>

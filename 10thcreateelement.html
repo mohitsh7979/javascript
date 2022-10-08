@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="container"> -->
+         <input type="Enter Your Name"><br>
+         <input type="age"><br>
+         <input type="Qualification"><a href="">+</a><br>
+        
+         <button>Click</button>
+
+    <!-- </div> -->
+    <script>
+        // document.querySelector("button").onclick=function(){
+        //     let m=document.querySelector("input").value;
+        //     let newp=document.createElement("p");
+            document.querySelector("a").onclick=function(){
+                event.preventDefault()
+                let newinput=document.createElement("input")
+                newinput.setAttribute('type','text')=function(){
+                    document.body.appendChild(newinput)
+                    console.log(newinput.value)
+                }
+
+            }
+        
+
+
+    
+            
+     
+        
+    </script>
+</body>
+</html>

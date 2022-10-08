@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <select>
+        <option value="+">Add</option>
+        <option value="-">Minus</option>
+        <option value="*">Mul</option>
+        <option value="/">Divide</option>
+        <option value="%">Mod</option>
+    </select>
+    <script>
+        document.querySelector("select").onclick = function () {
+            let a = Number(document.querySelector("#a").value);
+            let b = Number(document.querySelector('#b').value);
+            let c = document.querySelector("select").value;
+            if (c == '+') {console.log(a+b) }
+            else if (c == '-') { console.log(a-b) }
+            else if (c == '*') { console.log(a*b) }
+            else if (c == '/') { console.log(a/b) }
+            else if (c == '%') { console.log(a%b) }
+
+
+            console.log("Hello World")
+        }
+    </script>
+
+</body>
+
+</html>
