@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mohit{
+            display: flex;
+        }
+        .container{
+             border: 2px solid black;
+             margin: 5px 5px;
+             background-color: powderblue;
+             text-align: center;
+        }
+        .mohit:hover{
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="mohit">
+        <div class="container"><h1>Box 1</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque consequuntur natus laborum iusto pariatur voluptate reiciendis dolores modi enim, consectetur itaque. Enim facilis ullam quidem omnis exercitationem, animi quos, iste eum dolores autem, aliquam eaque inventore aut earum soluta molestiae incidunt tenetur pariatur. Blanditiis voluptatem pariatur illo praesentium aut, maxime magni facere alias qui id reiciendis incidunt iste fuga labore, enim dolorem saepe mollitia perferendis ratione sed, suscipit quibusdam. Similique aut ad repellendus cum voluptatum? Temporibus voluptatibus modi dignissimos praesentium sunt nam earum, porro saepe, deserunt doloribus sapiente rem sit laborum excepturi sequi velit, magnam officiis tempora eligendi cupiditate ipsam.</p><a href="">*</a><a href="show" style="display:none"  class="c">show</a></div>
+        <div class="container"><h1>Box 1</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque consequuntur natus laborum iusto pariatur voluptate reiciendis dolores modi enim, consectetur itaque. Enim facilis ullam quidem omnis exercitationem, animi quos, iste eum dolores autem, aliquam eaque inventore aut earum soluta molestiae incidunt tenetur pariatur. Blanditiis voluptatem pariatur illo praesentium aut, maxime magni facere alias qui id reiciendis incidunt iste fuga labore, enim dolorem saepe mollitia perferendis ratione sed, suscipit quibusdam. Similique aut ad repellendus cum voluptatum? Temporibus voluptatibus modi dignissimos praesentium sunt nam earum, porro saepe, deserunt doloribus sapiente rem sit laborum excepturi sequi velit, magnam officiis tempora eligendi cupiditate ipsam.</p><a href="">*</a><a href="show" style="display:none"  class="c">show</a></div>
+        <div class="container"><h1>Box 1</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque consequuntur natus laborum iusto pariatur voluptate reiciendis dolores modi enim, consectetur itaque. Enim facilis ullam quidem omnis exercitationem, animi quos, iste eum dolores autem, aliquam eaque inventore aut earum soluta molestiae incidunt tenetur pariatur. Blanditiis voluptatem pariatur illo praesentium aut, maxime magni facere alias qui id reiciendis incidunt iste fuga labore, enim dolorem saepe mollitia perferendis ratione sed, suscipit quibusdam. Similique aut ad repellendus cum voluptatum? Temporibus voluptatibus modi dignissimos praesentium sunt nam earum, porro saepe, deserunt doloribus sapiente rem sit laborum excepturi sequi velit, magnam officiis tempora eligendi cupiditate ipsam.</p><a href="">*</a><a href="show" style="display:none"  class="c">show</a></div>
+    </div>
+    <script>
+        let counter=0
+       let a= document.querySelectorAll("a");
+       a.forEach(function(a){
+        a.onclick=function(){
+            event.preventDefault()
+            console.log("Hey !!!!")
+          
+            a.previousElementSibling.style.display="none";
+            a.nextElementSibling.style.display="block";
+        
+            
+            // else{
+            //     a.previousElementSibling.style.display="block";
+            //     a.nextElementSibling.style.display="none";
+            //     counter++
+            // }
+            let d=document.querySelectorAll("#c");
+            d.forEach(function(a){
+                a.onclick=function(){
+                   a.previousElementSibling.style.display="block";
+                }
+            })
+
+           
+            
+         
+        }
+       })
+  </script>
+
+    <!-- hasown() hasownproperty,onject.keys -->
+</body>
+</html>

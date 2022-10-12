@@ -20,19 +20,28 @@
             m.push(b)
             console.log(m)
 
-
         }
 
-        // document.querySelector("#b").onclick = function () {
-        //     document.write(m)
-        // }
-
         document.querySelector("#b").onclick = function () {
-
+            let counter = 0
 
             let p = document.createElement("p")
-            p.innerHTML = m
+
             document.body.appendChild(p)
+            console.log(m)
+
+
+            let b = setInterval(function () {
+                if (counter == m.length - 1) {
+                    clearInterval(b)
+                    p.innerHTML = p.innerHTML + m[counter++]
+                }
+                else
+                    p.innerHTML = p.innerHTML + m[counter++] + ","
+
+            }, 1000)
+
+
         }
     </script>
 </body>

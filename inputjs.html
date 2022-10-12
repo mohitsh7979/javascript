@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="a">
+    <input type="text" placeholder="Name"><br>
+    <input type="text" placeholder="Qualification"><br>
+    <input type="text" placeholder="Skills"><br>
+    </div>
+    <div>
+    <button class="str" style="position: fixed;">Add strength</button>
+    </div>
+    <div class="m">
+        <button type="submit">submit</button>
+    </div>
+    <script>
+      
+        document.querySelector("button").onclick=function(){
+            let a=document.createElement("input");
+            let c=document.querySelector("")
+            a.placeholder="skills";
+            a.style.color="red";
+           let d=document.createElement("br")
+           
+           document.body.appendChild(d)
+            document.body.appendChild(a);
+            // let b=document.querySelector(".str");
+            // document.body.insertBefore(a,b);
+            
+
+
+        }
+        document.querySelector(".m").onclick=function(){
+            let x=document.querySelectorAll("input");
+            x.forEach(function(mohit){
+                console.log(mohit.value)
+                var c=mohit.value;
+      
+                let y=document.createElement("p");
+                y.innerHTML=c;
+                document.body.appendChild(y)
+       
+            
+            
+            })
+
+
+        
+    }
+    </script>
+  
+</body>
+</html>

@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#boxes{
+  margin: 2rem auto;
+  width: 80%;
+  display: flex;
+}
+.box{
+  width: 23%;
+  margin: 1rem;
+  border: 2px solid;
+  padding: 0.5rem;
+}
+.box .heading{
+  display: flex;
+  justify-content: space-between;
+}
+.box .heading span{
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.box a{
+  display: none;
+}

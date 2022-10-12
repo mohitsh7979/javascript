@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #369;
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#accordion{
+  margin: 3rem auto;
+  width: 80%;
+}
+.accord{
+  margin: 1rem 0;
+}
+.accord h1{
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+}
+.accord h1:hover{
+  box-shadow: 4px 3px 3px 3px rgba(0,0,0,0.3);
+}
+.accord p{
+  padding: 0.25rem;
+  display: none;
+  border: 1px solid #fff;
+  border-top: none;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.accord p.active{
+  display: block;
+}

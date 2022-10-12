@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Mohit Sharma</h1>
+    <script>
+        m = []
+        let counter = 0;
+        let a = document.querySelector("h1");
+
+        let b = document.querySelector("h1").textContent;
+        let c = b.split("")
+        m.push(c)
+        console.log(c);
+        console.log(m);
+        let count = 0;
+
+        c.forEach(function (c) {
+            console.log(c)
+        })
+
+        setInterval(function () {
+            if (count % 2 == 0) {
+
+                a.style.color = "black";
+                count++;
+            }
+
+
+            else {
+
+                a.style.color = "white";
+                count++;
+            }
+        }, 1000)
+
+        let d = document.createElement("p");
+
+        let p = setInterval(function () {
+            m.forEach(function (m) {
+                if (counter == m.length) {
+                    clearInterval(p)
+                }
+                else {
+
+                    d.innerHTML = d.innerHTML + m[counter++];
+                }
+            })
+        }, 1000)
+        document.body.appendChild(d)
+    </script>
+</body>
+
+</html>
