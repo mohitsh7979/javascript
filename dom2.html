@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body id="body">
+
+    <!-- <input type="text" name="" id="input">
+    <button id="btn">click</button> -->
+
+    <!-- <input type="text" id="input1">
+    <input type="text" id="input2"> -->
+
+    <select name="" id="select">
+        <option value="mohit">Mohit</option>
+        <option value="ankit">Ankit</option>
+        <option value="pranjal">Pranjal</option>
+        <option value="komal">Komal</option>
+    </select>
+
+    <select name="" id="select-color">
+        <option value="pink">Pink</option>
+        <option value="peach">peach</option>
+        <option value="maroon">Maroon</option>
+        <option value="yellow"> yellow</option>
+    </select>
+
+
+
+    <h1 id="h1"></h1>
+
+    <h1 id="h2"></h1>
+
+
+    <h1 id="h3"></h1>
+
+
+    <h1 id="h4"></h1>
+
+
+    <h1 id="h5"></h1>
+
+
+
+    <script>
+
+
+
+        //   document.getElementById("select").onclick=function(){
+
+        //     let input1=Number(document.getElementById("input1").value);
+        //     let input2=Number(document.getElementById("input2").value);
+        //     let a=document.getElementById("select").value;
+
+        //     if(a=='+'){
+        //         console.log(input1+input2);
+        //     }
+
+        //     else if(a=='-'){
+        //         console.log(input1-input2)
+        //     }
+
+
+        //     else if(a=='*'){
+        //         console.log(input1*input2)
+        //     }
+
+
+        //     else if(a=='/'){
+        //         console.log(input1/input2)
+        //     }
+
+
+        //   }
+
+
+        document.getElementById("select").onclick = function () {
+
+            // let input1 = Number(document.getElementById("input1").value);
+            // let input2 = Number(document.getElementById("input2").value);
+            let a = document.getElementById("select").value;
+
+            if (a == 'mohit') {
+
+                document.getElementById("h1").innerHTML = "Hey Mohit";
+                document.getElementById("body").style.background = "black";
+                document.getElementById("h1").style.color = "pink";
+                document.getElementById("h1").style.border = "2px solid black";
+                document.getElementById("h1").style.background = "powderblue"
+
+                // document.write("Hey Mohit");
+            }
+
+            else if (a == 'ankit') {
+
+                document.getElementById("h2").innerHTML = "Ankit is very rich person";
+                document.getElementById("body").style.background = "yellow";
+
+                console.log("Ankit is very rich person")
+            }
+
+
+            else if (a == 'pranjal') {
+
+                document.getElementById("h3").innerHTML = "pranjal watched movies";
+                console.log("pranjal watched movies")
+            }
+
+
+            else if (a == 'komal') {
+
+                document.getElementById("h4").innerHTML = "komal wants money";
+                console.log("komal wants money")
+            }
+
+
+        }
+
+
+        document.getElementById("select-color").onclick = function () {
+
+            let color = document.getElementById("select-color").value;
+
+            if (color == 'pink') {
+
+                document.getElementById("body").style.background = "pink";
+
+            }
+
+            else if (color == 'peach') {
+                document.getElementById("body").style.background = "green";
+
+            }
+
+            else if (color == 'maroon') {
+                document.getElementById("body").style.background = "maroon";
+
+            }
+
+            else if (color == 'yellow') {
+                document.getElementById("body").style.background = "yellow";
+
+            }
+        }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

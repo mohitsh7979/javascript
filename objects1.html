@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+    // let a={
+    //      first_name:'mohit',
+    //      last_name:'sharma',
+    //      age:18,
+    //      desc:'It is a django developer'
+    // }
+    // console.log(a.first_name+ " "+a.last_name+" "+a.age+" "+a.desc)
+
+    let student=[
+        {
+            name:"mohit",
+            address:{
+                city:'Jaipur',
+                state:'Rajasthan'
+            }
+        },
+        {
+            name:"Aman",
+           
+        },
+        {
+            name:"akshat",
+            address:{
+                city:'Jaipur',
+                state:'Rajasthan'
+            }
+        }
+    ]
+
+    student.forEach((element,index)=>{
+        console.log(element)
+        for(x in element){
+            if (typeof element[x]=="object"){
+                for(y in element[x]){
+                    console.log()
+                }
+                
+            }
+            else{
+                console.log(element[x])
+            }
+           
+        }
+       
+    })
+   </script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <select name="" id="">
+        <option value="january">January</option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+        <option value="april">April</option>
+        <option value="may">May</option>
+        <option value="june">June</option>
+        <option value="july">July</option>
+        <option value="august">August</option>
+        <option value="september">Septempber</option>
+        <option value="october">October</option>
+        <option value="november">November</option>
+        <option value="december">December</option>
+    </select>
+
+    <h1></h1>
+
+    <!-- <div>
+       <h3></h3>
+    </div> -->
+
+    <script>
+
+        document.querySelector("select").onclick = function () {
+
+            let a = document.querySelector("select").value;
+            console.log(a)
+
+            document.querySelector("h1").innerHTML = a;
+
+            for (i = 1; i <= 31; i++) {
+
+                if (a == 'january') {
+
+                    if (i == 32) {
+                        break;
+                    }
+                    
+                    // console.log(i)
+                    // document.querySelector("h3").innerHTML=i;
+
+                    let div=document.createElement("div")
+
+        
+                    let p = document.createElement("p")
+                    p.innerHTML = i;
+                    div.appendChild(p);
+
+                    p.style.display = "inline-block";
+                    p.style.margin = "2px 2px ";
+                    p.style.border = "2px solid black";
+                    p.style.background = "powderblue";
+
+
+
+                }
+
+                else if (a == 'february') {
+
+                    if (i == 29) {
+
+                        break;
+
+                    }
+
+                    console.log(i)
+                    document.querySelector("h3").innerHTML=i;
+
+
+                }
+
+
+                else if (a == 'march') {
+
+                    if (i == 32) {
+
+                        break;
+
+                    }
+                    console.log(i)
+                    document.querySelector("h3").innerHTML=i;
+                }
+
+
+                else if (a == 'april') {
+
+                    if (i == 31) {
+
+                        break;
+
+                    }
+                    console.log(i)
+                    document.querySelector("h3").innerHTML=i;
+                }
+
+
+                else if (a == 'may') {
+
+                    if (i == 32) {
+
+                        break;
+
+                    }
+                    console.log(i)
+                    document.querySelector("h3").innerHTML=i;
+                }
+
+
+                else if (a == 'june') {
+
+                    if (i == 31) {
+
+                        break;
+
+                    }
+                    console.log(i)
+                    document.querySelector("h3").innerHTML=i;
+                }
+
+
+                else if (a == 'july') {
+
+                    if (i == 32) {
+
+                        break;
+
+                    }
+                    console.log(i)
+                    document.querySelector("h3").innerHTML=i;
+                }
+
+
+                else if (a == 'august') {
+
+                    if (i == 32) {
+
+                        break;
+
+                    }
+                    console.log(i)
+                }
+
+
+                else if (a == 'september') {
+
+                    if (i == 31) {
+
+                        break;
+
+                    }
+                    console.log(i)
+                    document.querySelector("h3").innerHTML=i;
+                }
+
+
+                else if (a == 'october') {
+
+                    if (i == 32) {
+
+                        break;
+
+                    }
+                    console.log(i)
+                    document.querySelector("h3").innerHTML=i;
+                }
+
+
+                else if (a == 'november') {
+
+                    if (i == 31) {
+
+                        break;
+
+                    }
+                    console.log(i)
+                    document.querySelector("h3").innerHTML=i;
+                }
+
+
+                else if (a == 'december') {
+
+                    if (i == 32) {
+
+                        break;
+
+                    }
+                    console.log(i)
+                    document.querySelector("h3").innerHTML=i;
+                }
+
+
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>

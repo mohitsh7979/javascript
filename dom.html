@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <!-- <input type="text" id="input1">
+    <input type="text" id="input2"> -->
+    <!-- <button id="button">Click Me</button> -->
+    <!-- <select name="" id="select">
+
+        <option value="+">Add</option>
+        <option value="-">Minu</option>
+        <option value="*">Mul</option>
+        <option value="/">Divide</option>
+    </select> -->
+
+
+    <!-- <select name="" id="select">
+
+        <option value="mohit">Mohit</option>
+        <option value="rohit">Rohit</option>
+        <option value="aman">aman</option>
+        <option value="ankit">ankit</option>
+    </select> -->
+
+
+
+    <select name="" id="select">
+
+        <option value="white">White</option>
+        <option value="black">Black</option>
+
+    </select>
+
+    <h1 id="h1">This is My website</h1>
+
+    <script>
+
+        //  document.getElementById("button").onclick=function(){
+
+        //     a=document.getElementById("input").value;
+
+        //     console.log(a);
+
+        //  }
+
+
+
+        // Add Two number
+
+        // document.getElementById("button").onclick=function(){
+
+        //     var a=Number(document.getElementById("input1").value);
+        //     var b=Number(document.getElementById("input2").value);
+        //     console.log(a+b)
+
+
+        // }
+
+
+
+        // min calculater
+
+        // document.getElementById("select").onclick = function () {
+
+        //     var a = Number(document.getElementById("input1").value);
+        //     var b = Number(document.getElementById("input2").value);
+        //     var c = document.getElementById("select").value;
+
+        //     if (c == '+') {
+
+        //         console.log(a + b)
+        //     }
+
+        //     else if (c == '-') {
+        //         console.log(a - b);
+        //     }
+
+        //     else if (c == '*') {
+        //         console.log(a * b);
+        //     }
+
+        //     else if (c == '/') {
+        //         console.log(a / b);
+        //     }
+
+
+        // }
+
+        // conditional makeing
+
+        // document.getElementById("select").onclick = function () {
+
+        //     var a = Number(document.getElementById("input1").value);
+        //     var b = Number(document.getElementById("input2").value);
+        //     var c = document.getElementById("select").value;
+
+        //     if (c == 'mohit') {
+
+        //         console.log('Your name is mohit')
+        //     }
+
+        //     else if (c == 'rohit') {
+        //         console.log('Your name is rohit');
+        //     }
+
+        //     else if (c == 'aman') {
+        //         console.log('Your name is aman');
+        //     }
+
+        //     else if (c == 'ankit') {
+        //         console.log('your name is ankit');
+        //     }
+
+
+        // }
+
+        document.getElementById("select").onclick = function () {
+
+            var a = document.getElementById("select").value;
+
+            if (a == 'black') {
+
+                document.getElementById("body").style.background = "Black";
+                document.getElementById("h1").style.color = "White";
+                }
+
+
+            else {
+
+                document.getElementById("body").style.background = "white";
+                document.getElementById("h1").style.color = "Black";
+                }
+        }
+
+    </script>
+</body>
+
+</html>
